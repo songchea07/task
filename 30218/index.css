@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*:not(form){
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#header{
+    background-color: #DDDDDD;
+    height: 100px;
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#topbar_title{
+    padding: 10px;
+    margin-right: 100px;
+}
+
+#topbaritems{
+    display: flex;
+    width: 500px;
+}
+
+#topbaritems > li{
+    flex: 1;
+}
+
+#topbaritems > li:hover{
+    font-weight: bold;
+}
+
+#foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDDDDD;
+    height: 50px
+}
+
+#sec2{
+    font-size: 1.2em;
+}
+h3 , #question{
+    text-align: left;
+    margin: 20px 0 0 30px;
+}
+
+#question{
+
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 20px;
+    width: 100%;
+}
+.cols{
+    padding: 5px;
+}
+.cols li{
+    display: inline-block;
+}
+.col1{
+    width:120px;
+}
+.email input{
+    width: 100px;
+    height: 25px;
+}
+.col2 input, select{
+    width: 200px;
+    height: 28px;
+}
+.col{
+
+    vertical-align: top;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+}
+#buttons{
+    text-align: left;
+}
+#buttons button{
+
+    padding: 5px;
+    margin-bottom: 20px;
+}
+#form{
+    text-align: left;
+}
