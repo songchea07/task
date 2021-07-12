@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+}
+/* 여기에 있던 text-align center를 body로 움김 */
+
+body{
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    border-right: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+}
+/* body의 width를 지정해주고 왼쪽 오른쪽에 border를 생성해줌 */
+
+body:not(form){
+    text-align: center;
+}
+/* form 태그를 제외하고 모든 요소들에게 text-align : center; 선언 */
+
+hr{
+    border: 1px solid #DDDDDD;
+}
+/* hr태그를 body의 border와 일치하게 변경 */
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#header{
+    background-color: #DDDDDD;
+    height: 100px;
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#topbar_title{
+    padding: 10px;
+    margin-right: 100px;
+}
+
+#topbaritems{
+    display: flex;
+    width: 500px;
+}
+
+#topbaritems > li{
+    flex: 1;
+}
+
+#topbaritems > li:hover{
+    font-weight: bold;
+}
+
+#foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDDDDD;
+    height: 50px
+}
+
+#sec2{
+    font-size: 1.2em;
+}
+
+h3 , #question{
+    text-align: left;
+    margin: 20px 0 0 30px;
+}
+
+#question{
+    margin: 0px;
+    width: 100%;
+}
+/* margin을 0으로 주어 다른 section 과 마찬가지로 제목과의 간격을 일정히게 해줌 */
+
+#question > ul > li{
+    padding: 10px;
+}
+/* form 요소간의 간격 생성 */
+
+#question > ul > li > label > input{
+    width: 200px;
+}
+/* input width 를 통일 */
+
+#question > ul > li > label > *{
+    font-size: 1.1em;
+}
+/* 사용자가 입력하는 input 창의 fontsize 증가 */
+
+textarea{
+    width: 400px;
+    height: 100px;
+}
+
+#buttons{
+    text-align: left;
+}
+
+#buttons button{
+    padding: 5px;
+}
+
+/* form 요소가 변경됨에 따라 기존에 있던 class 를 사용한 css 다 삭제함 */

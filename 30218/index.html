@@ -1,90 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>30218 송채연</title>
-    <link rel="stylesheet" href="index.css">
+    <title>30218</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body id="body">
-    <header id="header">
+
+    
+    <div id="gosec1"></div>
+    <header id="header" style="user-select: none;">
         <div id="topbar_title">
-            <h1><a href="#body">30218 송채연</a></h1>
+            <h1><a href="#body">introduce myself</a></h1>
         </div>
         <nav>
             <div id="topbar">
                 <ul id="topbaritems">
-                    <li><a href="#sec1">profile</a></li>
-                    <li><a href="#sec2">my hobby</a></li>
-                    <li><a href="#sec3">question</a></li>
+                    <li><a href="#gosec1">profile</a></li>  
+                    
+                    <li><a href="#gosec2">my hobby</a></li>
+                    <li><a href="#gosec3">question</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <article>
-        <section id="sec1">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis hic distinctio sed similique, blanditiis deserunt neque laboriosam maxime a iure, ipsum aperiam rerum, ratione vitae. Eligendi tenetur adipisci animi maiores?
+        <section>
+            <h3 id="sec1">profile</h3>
+            <hr>
+            <p id="gosec2"> 
+                이름 : 송채연 <br>
+                학교 : 세명컴퓨터고등학교 <br>
+                생년월일 : 2003/07/31 <br>
+                전화번호 : 010-5955-1427 <br> 
+                email : songchea07@gmail.com <br>
+                discord : 채연#4417 <br>
+                meti : INTP <br>
+                <img src="img/meti.jpg" width="200px" height="330px">
             </p>
         </section>
-        <section id="sec2">
+        <section>
+            <h3 id="sec2">my hobby</h3>
+            <hr>
             <ul>
-                <li>1 : asdf
-                    <p></p>
+                <li><h2>자주 하는 게임 소개</h2></li>
+                <li><h4>1 : league of legend</h4>
+                    <p>
+                        <img src="img/lollogo.png" width="50px" height="50px"><br>
+                        <img src="img/lol.png"><br>
+                        2020년 6월쯤에 시작하였다.
+                        <!--사진 하나 더 넣을 예정  주로 하는 챔피언 넣을까?-->
+                        
+                    </p>
                 </li>
-                <li>2 : asdf
-                    <p></p>
+                <li><h4>2 : maple story</h4>
+                    <p>
+                        <img src="img/maplelogo.jpg" width="110px" height="60px"><br>
+                        <img src="img/maple.png"><br>
+
+                        2017년쯤에 시작하였다.<br>
+                        이벤트는 매번 참여하는 편이였으나 요즘에는 안한다.<br>
+                        코디템은 꼭 사는편 <!--<-빗금넣을거-->
+
+                    </p>
                 </li>
-                <li>3 : asdf
-                    <p></p>
+                <li id="gosec3"><h4>3. TFT</h4>
+                    <p>
+                        시즌 3 부터 시작했다. 
+                    </p>
                 </li>
+                <li>그 외 스팀 게임도 자주 하는 편이다.</li>
             </ul>
         </section>
-        <section id="sec3">
-        	<h3>question</h3>
-        	
-            <form id="question">
-            	<ul >
-            		<li>
-            			<ul class="cols">
-            				<li class="col1">이름</li><li class="col2"><input type="text" name="name"></li>
-            			</ul>
-            		</li>
-            		<li>
-            			<ul class="cols">
-            			<li class="col1">이메일</li>
-            			<li class="email"><input type="text" name="name"> @</li>
-            			<li>
-            				<select>
-            					<option>직접 입력</option>
-            					<option>naver.com</option>
-            					<option>gmail.com</option>
-            					<option>hanmail.net</option>
-            				</select>
-            			</li>
-            			</ul>
-            		</li>
-            		<li>
-            			<ul class="cols">
-            			<li class="cols col">질문</li><li class="col2"><textarea></textarea></li>
-            			</ul>
-            		</li>
-            	</ul>
-            	<div id="buttons">
-            		<button type="submit">전송</button>
-            		<button type="reset">다시쓰기</button>
-            	</div>
+        <section>
+            <h3 id="sec3">question</h3>
+            <hr>
+            <form id="question" style="border: 0px;">
+                
+                <ul>
+                    <li>
+                        <label>
+                            이름 &nbsp;&nbsp;: <input type="text" name="name">
+                        </label>
+                       
+                    </li>
+                    <li>
+                        <label>
+                            이메일 : <input type="email" name="name">
+                        </label>
+                        
+                    </li>
+                    <li>
+                        <label>질문 &nbsp;&nbsp;: <textarea></textarea></label>
+                    </li>
+                    <li>
+                        <div id="buttons">
+                            <button type="submit">전송</button>
+                            <button type="reset">다시쓰기</button>
+                        </div>
+                    </li>
+                </ul>
             </form>
-            
         </section>
     </article>
     <footer id="foot">
         <div>
             <p>
-                소속 : 세띵 | 이름 : 송채연 | 메일주소 : songchea07@gmail.com
+                소속 : 세띵 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이름 : 송채연 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 메일주소 : songchea07@gmail.com
             </p>
+           
         </div>
     </footer>
 </body>
+
 </html>
