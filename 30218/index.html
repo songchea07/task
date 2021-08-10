@@ -1,99 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>30218</title>
+    <title>나, HTML 초보</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body id="body">
-
-    
     <div id="gosec1"></div>
     <header id="header" style="user-select: none;">
         <div id="topbar_title">
-            <h1><a href="#body">introduce myself</a></h1>
+            <h1><a href="#body">나, HTML 초보</a></h1>
         </div>
         <nav>
             <div id="topbar">
                 <ul id="topbaritems">
-                    <li><a href="#gosec1">profile</a></li>  
-                    
+                    <li><a href="#gosec1">profile</a></li>
                     <li><a href="#gosec2">my hobby</a></li>
                     <li><a href="#gosec3">question</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <article>
-        <section>
-            <h3 id="sec1">profile</h3>
+        <section id="sec1">
+            <h3 style="font-size: 1.5em;">profile</h3>
             <hr>
-            <p id="gosec2"> 
+            <p style="margin-bottom: 0px;" id="sec1_p">
                 이름 : 송채연 <br>
                 학교 : 세명컴퓨터고등학교 <br>
                 생년월일 : 2003/07/31 <br>
-                전화번호 : 010-5955-1427 <br> 
+                전화번호 : 010-5955-1427 <br>
                 email : songchea07@gmail.com <br>
                 discord : 채연#4417 <br>
-                meti : INTP <br>
+                mbti : INTP <br><br>
                 <img src="img/meti.jpg" width="200px" height="330px">
+                <br><br><br id="gosec2"><br><br><br>
             </p>
         </section>
-        <section>
-            <h3 id="sec2">my hobby</h3>
+        <section id="sec2">
+            <h3 style="font-size: 1.5em;">my hobby</h3>
             <hr>
-            <ul>
-                <li><h2>자주 하는 게임 소개</h2></li>
-                <li><h4>1 : league of legend</h4>
-                    <p>
-                        <img src="img/lollogo.png" width="50px" height="50px"><br>
-                        <img src="img/lol.png"><br>
-                        2020년 6월쯤에 시작하였다.
-                        <!--사진 하나 더 넣을 예정  주로 하는 챔피언 넣을까?-->
-                        
-                    </p>
+            <ul id="sec2ul">
+                <li>
+                    <h2>자주 하는 게임 소개</h2>
                 </li>
-                <li><h4>2 : maple story</h4>
+                <li>
+                    <h4>1 : league of legend</h4>
+                    <p><img src="img/lol.png"><br><br>
+                        2020년 6월쯤에 시작하였다. <br><br>
+                        <img src="img/lol1.PNG" alt="lol" id="steamimg"><br>
+                        자주 하는 챔피언은 럭스 레오나 이다.</p>
+                </li>
+                <li>
+                    <h4>2 : maple story</h4>
                     <p>
-                        <img src="img/maplelogo.jpg" width="110px" height="60px"><br>
-                        <img src="img/maple.png"><br>
-
+                        <img src="img/maple.png"><br><br>
                         2017년쯤에 시작하였다.<br>
-                        이벤트는 매번 참여하는 편이였으나 요즘에는 안한다.<br>
-                        코디템은 꼭 사는편 <!--<-빗금넣을거-->
-
+                        이벤트는 매번 참여하는 편이였으나 요즘에는 안한다.
+                        <p style="text-decoration: line-through; color: gray; display: inline;">코디템은 꼭 사는편</p><br>
+                        <br>주로 하는 일 : 보스 돌기, 시드
                     </p>
                 </li>
-                <li id="gosec3"><h4>3. TFT</h4>
+                <li >
+                    <h4>3. TFT</h4>
                     <p>
-                        시즌 3 부터 시작했다. 
+                        시즌 3 부터 시작했다. <br><br>
+                        <img src="img/tft1.jpg" alt="tft">
                     </p>
                 </li>
-                <li>그 외 스팀 게임도 자주 하는 편이다.</li>
+                <li>그 외 스팀 게임도 자주 하는 편이다.<br><br>
+                    <img src="img/steam.PNG" alt="steamimage" id="steamimg">
+                </li>
             </ul>
+            <br id="gosec3"><br><br><br><br>
         </section>
-        <section>
-            <h3 id="sec3">question</h3>
+        <section id="sec3">
+            <h3 style="font-size: 1.5em;">question</h3>
             <hr>
             <form id="question" style="border: 0px;">
-                
                 <ul>
                     <li>
-                        <label>
-                            이름 &nbsp;&nbsp;: <input type="text" name="name">
-                        </label>
-                       
+                        <label>이름 &nbsp;&nbsp;: <input type="text" name="name"></label>
                     </li>
                     <li>
-                        <label>
-                            이메일 : <input type="email" name="name">
-                        </label>
-                        
+                        <label>이메일 : <input type="email" name="name"></label>
                     </li>
                     <li>
                         <label>질문 &nbsp;&nbsp;: <textarea></textarea></label>
@@ -108,14 +100,14 @@
             </form>
         </section>
     </article>
+    <br><br><br><br><br>
     <footer id="foot">
         <div>
             <p>
-                소속 : 세띵 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이름 : 송채연 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 메일주소 : songchea07@gmail.com
+                소속 : 세명컴퓨터고등학교 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/songchea07/task" target="_blank" id="git">GITHUB</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 메일주소 : songchea07@gmail.com
             </p>
-           
         </div>
     </footer>
 </body>
-
 </html>
