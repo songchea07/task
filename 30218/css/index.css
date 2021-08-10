@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Jua', sans-serif;
 }
-/* 여기에 있던 text-align center를 body로 움김 */
+
 
 body{
     width: 1250px;
@@ -13,34 +13,36 @@ body{
     border-right: 1px solid #DDDDDD;
     border-left: 1px solid #DDDDDD;
 }
-/* body의 width를 지정해주고 왼쪽 오른쪽에 border를 생성해줌 */
+
 
 body:not(form){
     text-align: center;
 }
-/* form 태그를 제외하고 모든 요소들에게 text-align : center; 선언 */
+
 
 hr{
     border: 1px solid #DDDDDD;
 }
-/* hr태그를 body의 border와 일치하게 변경 */
+
 
 ul{
     list-style-type: none;
 }
 
-a{
+a:not(#git){
     color: black;
     text-decoration: none;
+
 }
 
 #header{
-    background-color: #DDDDDD;
+    background-color: #D9E4DD;
     height: 100px;
     width: 100%;
 }
 
 #header{
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,12 +72,22 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DDDDDD;
+    background-color: #555555;
     height: 50px
+}
+#sec1{
+    font-size: 1.2em;
+    background-color: #F0F0F0;
 }
 
 #sec2{
     font-size: 1.2em;
+    background-color: #CDC9C3;
+}
+
+#sec3{
+    font-size: 1.2em;
+    background-color: #FFFFFF;
 }
 
 h3 , #question{
@@ -87,22 +99,26 @@ h3 , #question{
     margin: 0px;
     width: 100%;
 }
-/* margin을 0으로 주어 다른 section 과 마찬가지로 제목과의 간격을 일정히게 해줌 */
 
 #question > ul > li{
     padding: 10px;
 }
-/* form 요소간의 간격 생성 */
 
 #question > ul > li > label > input{
     width: 200px;
 }
-/* input width 를 통일 */
 
 #question > ul > li > label > *{
     font-size: 1.1em;
 }
-/* 사용자가 입력하는 input 창의 fontsize 증가 */
+
+h3{
+
+    margin-top: 0px;
+    padding-top: 10px;
+    user-select: none;
+}
+
 
 textarea{
     width: 400px;
@@ -117,4 +133,9 @@ textarea{
     padding: 5px;
 }
 
-/* form 요소가 변경됨에 따라 기존에 있던 class 를 사용한 css 다 삭제함 */
+#sec2ul{
+    margin-bottom: 0px;
+}
+#steamimg{
+    width: 500px;
+}
